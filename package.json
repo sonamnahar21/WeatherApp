@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc --reporter=html --reporter=text mocha --color",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Sonam Nahar",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+    "jscheckstyle": "0.0.9",
     "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
     "readline-sync": "^1.4.9",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3"
   }
 }
