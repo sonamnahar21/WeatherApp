@@ -9,6 +9,8 @@
   "author": "Sonam Nahar",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
     "readline-sync": "^1.4.9",
     "request": "^2.88.0"
   }
