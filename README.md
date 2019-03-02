@@ -5,4 +5,4 @@
 - Install Dependencies: `npm install`
 
 ## Run 
-- node index.js
+- `node index.js`
