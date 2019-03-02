@@ -17,7 +17,7 @@ var currentWeather = function(city,callback) {
                     }
                 );
               }
-            callback(null, JSON.parse(body));  
+            return callback(response);  
         });
 }
 
