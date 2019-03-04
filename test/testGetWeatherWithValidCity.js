@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 var getWeather = require('../src/getWeather');
-var inputCity = 'San Jose';
+const inputCity = 'San Franscisco';
 
 describe('Get Current Weather', () => {
   describe('For valid City Name: ' +inputCity,  () => {
@@ -62,10 +62,6 @@ describe('Get Current Weather', () => {
         expect(body.main.temp_min).to.be.a('number');
         expect(body.main.temp_max).to.exist;
         expect(body.main.temp_max).to.be.a('number');
-        expect(body.main.sea_level).to.exist;
-        expect(body.main.sea_level).to.be.a('number');
-        expect(body.main.grnd_level).to.exist;
-        expect(body.main.grnd_level).to.be.a('number');
       });
     });
     it('answer with weather response `weather` object', () => {
