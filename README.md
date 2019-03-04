@@ -1,4 +1,5 @@
 # WeatherApp
+This is a simple WeatherApp using OpenWeatherMap.org API.
 
 ## Installation 
 - Create <a href="https://openweathermap.org/api">OpenWeatherMap.org</a> account

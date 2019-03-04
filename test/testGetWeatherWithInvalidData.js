@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 var getWeather = require('../src/getWeather');
 let invalidData;
 
-describe('Get Current Weather for Invalid Data', () => {
+describe('Get Current Weather for Invalid Data', async() => {
     invalidData = 'San Francicso';
     describe('City Name: ' +invalidData,  () => {
         it('answers with `404` status', () => {

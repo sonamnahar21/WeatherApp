@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha --color",
+    "test": "nyc --reporter=html --reporter=text mocha --color  --bail",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Sonam Nahar",
